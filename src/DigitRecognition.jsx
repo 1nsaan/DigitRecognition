@@ -14,7 +14,7 @@ const DigitRecognition = () => {
   useEffect(() => {
     const loadModel = async () => {
       try {
-        const loadedModel = await tf.loadLayersModel("tfjs_models/tfjs_models/model.json");
+        const loadedModel = await tf.loadLayersModel("tfjs_models/model.json");
         setModel(loadedModel);
         console.log("Model loaded successfully");
       } catch (error) {
