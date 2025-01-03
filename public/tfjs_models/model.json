@@ -8,7 +8,7 @@
         "model_config": {
             "class_name": "Sequential",
             "config": {
-                "name": "sequential_3",
+                "name": "sequential",
                 "trainable": true,
                 "dtype": {
                     "module": "keras",
@@ -30,13 +30,13 @@
                             ],
                             "dtype": "float32",
                             "sparse": false,
-                            "name": "input_layer_2"
+                            "name": "input_layer"
                         }
                     },
                     {
                         "class_name": "Conv2D",
                         "config": {
-                            "name": "conv2d_3",
+                            "name": "conv2d",
                             "trainable": true,
                             "dtype": {
                                 "module": "keras",
@@ -88,7 +88,7 @@
                     {
                         "class_name": "MaxPooling2D",
                         "config": {
-                            "name": "max_pooling2d_3",
+                            "name": "max_pooling2d",
                             "trainable": true,
                             "dtype": {
                                 "module": "keras",
@@ -113,7 +113,7 @@
                     {
                         "class_name": "Conv2D",
                         "config": {
-                            "name": "conv2d_4",
+                            "name": "conv2d_1",
                             "trainable": true,
                             "dtype": {
                                 "module": "keras",
@@ -165,7 +165,7 @@
                     {
                         "class_name": "MaxPooling2D",
                         "config": {
-                            "name": "max_pooling2d_4",
+                            "name": "max_pooling2d_1",
                             "trainable": true,
                             "dtype": {
                                 "module": "keras",
@@ -190,7 +190,7 @@
                     {
                         "class_name": "Conv2D",
                         "config": {
-                            "name": "conv2d_5",
+                            "name": "conv2d_2",
                             "trainable": true,
                             "dtype": {
                                 "module": "keras",
@@ -363,7 +363,7 @@
             "weighted_metrics": null,
             "run_eagerly": false,
             "steps_per_execution": 1,
-            "jit_compile": false,
+            "jit_compile": true,
             "optimizer_config": {
                 "class_name": "Adam",
                 "config": {
@@ -393,7 +393,7 @@
             ],
             "weights": [
                 {
-                    "name": "conv2d_3/kernel",
+                    "name": "conv2d/kernel",
                     "shape": [
                         3,
                         3,
@@ -403,14 +403,14 @@
                     "dtype": "float32"
                 },
                 {
-                    "name": "conv2d_3/bias",
+                    "name": "conv2d/bias",
                     "shape": [
                         32
                     ],
                     "dtype": "float32"
                 },
                 {
-                    "name": "conv2d_4/kernel",
+                    "name": "conv2d_1/kernel",
                     "shape": [
                         3,
                         3,
@@ -420,14 +420,14 @@
                     "dtype": "float32"
                 },
                 {
-                    "name": "conv2d_4/bias",
+                    "name": "conv2d_1/bias",
                     "shape": [
                         64
                     ],
                     "dtype": "float32"
                 },
                 {
-                    "name": "conv2d_5/kernel",
+                    "name": "conv2d_2/kernel",
                     "shape": [
                         3,
                         3,
@@ -437,7 +437,7 @@
                     "dtype": "float32"
                 },
                 {
-                    "name": "conv2d_5/bias",
+                    "name": "conv2d_2/bias",
                     "shape": [
                         64
                     ],
